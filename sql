@@ -33,6 +33,20 @@ From payment
 WHERE payment_date > '2007-05-01'
 ORDER BY payment_date DESC;
 
+-- ANSWER
+-- FROM payment
+-- knows we only need information from the payment table
+
+-- WHERE payment_date > '2007-05-01'
+-- filters out payment_dates more recent than May, 1 2007
+
+-- SELECT payment_date
+-- chooses those payment_dates to show
+
+-- ORDER BY payment_date DESC
+-- orders them by the latest date first
+
+
 
 SELECT payment_id, payment_date
 From payment
