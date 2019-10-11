@@ -68,9 +68,18 @@ From customer
 WHERE store_id = 1 AND active = 0
 ORDER BY last_update;
 
-ANSWER
-FROM customer
-only information from the customer table
+-- ANSWER
+-- FROM customer
+-- only information from the customer table
+
+-- WHERE store_id = 1 AND active = 0
+-- filters out only the store_ids that are equal to 1, and their active = 0
+
+-- SELECT customer_id, email, active
+-- shows the customer_id, email, and active status from the results from the where filter
+
+-- ORDER BY last_update;
+-- orders by the last_update ascending
 
 
 -- THESE TWO ARE A BIT TRICKIER
@@ -80,6 +89,8 @@ JOIN film_category AS fc  ON f.film_id=fc.film_id
 JOIN category AS c ON fc.category_id=c.category_id
 GROUP BY c.category_id
 ORDER BY total DESC ;
+
+
 
 
 SELECT *
