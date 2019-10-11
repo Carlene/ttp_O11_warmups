@@ -90,7 +90,21 @@ JOIN category AS c ON fc.category_id=c.category_id
 GROUP BY c.category_id
 ORDER BY total DESC ;
 
+-- ANSWER
+-- FROM film as f
+-- JOIN film_category AS fc  ON f.film_id=fc.film_id
+-- JOIN category AS c ON fc.category_id=c.category_id
 
+-- grabs information from the film table, joining it with the film category table on their primary/foreign key film_id. then it joins that joint table with the category table on their category_id key
+
+-- GROUP BY c.category_id
+-- groups all the returned information together by category_id
+
+-- SELECT c.name, COUNT(f.film_id) as total
+-- returns the name of the genre and the count of films of each genre
+
+-- ORDER BY total DESC ;
+-- orders by the amount of films in each genre
 
 
 SELECT *
