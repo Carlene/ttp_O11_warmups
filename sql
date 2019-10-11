@@ -52,11 +52,26 @@ SELECT payment_id, payment_date
 From payment
 WHERE amount < 3;
 
+-- ANSWER
+-- FROM payment
+-- fishes out information from the payment table
+
+-- WHERE amount < 3
+-- filters out where the payment amount is less than $3
+
+-- SELECT payment_id, payment_date
+-- shows the payment_ids and payment_dates that the where clause filters out
+
 
 SELECT customer_id, email, active
 From customer
 WHERE store_id = 1 AND active = 0
 ORDER BY last_update;
+
+ANSWER
+FROM customer
+only information from the customer table
+
 
 -- THESE TWO ARE A BIT TRICKIER
 SELECT c.name, COUNT(f.film_id) as total
