@@ -111,6 +111,16 @@ SELECT *
 FROM payment
 WHERE amount > (SELECT AVG(amount) FROM payment);
 
+-- ANSWER
+-- FROM payment
+-- grabs information from the payment table
+
+-- WHERE amount > (SELECT AVG(amount) FROM payment);
+-- returns where the amount of payment is greater than the average amount of payment
+
+-- SELECT *
+-- select all columns from payment
+
 
 
 
